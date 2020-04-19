@@ -1,0 +1,90 @@
+#what .items{
+    display: block;
+    padding: 1rem;
+}
+
+#what .items .item{
+    display: flex;
+    text-align: left;
+}
+
+#what .items .item i{
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+
+
+/* Smartphones */
+@media(max-width: 500px){
+
+    #navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #navbar .logo{
+        margin-bottom: 0.5rem;
+    }
+
+    #navbar ul{
+        padding: 0.5rem;
+        margin: auto;
+    }
+
+
+    #showcase .showcase-content{
+        top: 160px;
+    }
+
+    #showcase h1{
+        line-height: 4rem;
+    }
+
+    #who{
+        display: block;
+    }
+
+    #who .who-img{
+        display: none;
+    }
+
+    #contact{
+        display: block;
+    }
+
+    .map a{
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+
+
+
+    .btn-neon {
+        border: 2px solid #7CB4F1;
+        background-color: rgba(70, 70, 70, 0.25);
+        box-shadow: none;
+        color: #7CB4F1;
+        text-shadow: 0 0 4px #7CB4F1;
+        box-shadow: inset 0 0 6px #7CB4F1,  0 0 6px #7CB4F1;
+        font-size: 16px;
+        transition: .2s;
+        -webkit-transition: .2s;
+        padding: 15px 30px;
+        line-height: 40px;
+        margin: 0;
+        border-radius: 0.5rem;
+        cursor: pointer
+    }
+
+
+    .logo-1{
+        align-self: center;
+        width: 190%;
+        filter: grayscale(0%);
+    }
+}

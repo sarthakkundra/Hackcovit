@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Main Styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.4rem;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+p{
+    margin: 0.75rem 0;
+}
+
+
+/* Utils */
+.text-primary{
+    color: #7CB4F1;
+}
+
+
+
+.l-heading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    margin-top: 1rem;
+}
+
+
+.m-heading{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+
+.py-1{padding: 1.5rem 0;}
+.py-2{padding: 2rem 0;}
+.py-3{padding: 3rem 0;}
+
+
+
+.p1{padding: 1.5rem;}
+.p2{padding: 2rem;}
+.p3{padding: 3rem;}
+
+
+
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+
+
+.list li{
+    margin: 0.5rem 0;
+    border: #444 dotted 1px;
+}
+
+
+.lead{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.btn{
+    display: inline-block;
+    background: #7AB4F5;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+
+.btn-dark{
+    background: #333;
+    color: #fff;
+}
+
+
+
+.btn:hover{
+    background: #649EDE;
+}
+
+
+
+.btn-dark:hover{
+    background: #444;
+}
+
+
+.fading{
+    animation:fading 30s infinite
+}
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+
+/* Code-pen buttons */
+
+
+.btn-neon {
+    border: 2px solid #404040;
+    background-color: rgba(70, 70, 70, 0.25);
+    box-shadow: none;
+    color: #5E89B8;
+    text-shadow: 0 0 0px transparent;
+    font-size: 16px;
+    transition: .2s;
+    -webkit-transition: .2s;
+    padding: 15px 30px;
+    line-height: 40px;
+    margin: 0;
+    border-radius: 0.5rem;
+    cursor: pointer
+}
+.btn-neon:hover {
+   border: 2px solid #7CB4F1;
+   color: #7CB4F1;
+   text-shadow: 0 0 4px #7CB4F1;
+   box-shadow: inset 0 0 6px #7CB4F1,  0 0 6px #7CB4F1;
+}
+
+
+
+.bg-primary{
+    background: #444;
+    color: #fff;
+}
+
+
+
+.bg-light{
+    background: #ececec;
+    color: #333
+}
+
+
+
+.bg-dark{
+    color: #ececec;
+    background: #333
+}
+
+.main{
+    height: 3.5rem;
+    width: 14rem;
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+
+#navbar ul li a{
+    color: #fff;
+    margin: 0 0.25rem;
+    padding: 0.75rem;
+}
+
+
+
+#navbar ul li a:hover{
+    background: #7CB4F1;
+    border-radius: 5px;
+}
+
+
+
+/* Showcase */
+#showcase{
+    background: url('../images/showcase.jpg') no-repeat center 30%/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    /* Overlay */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 99px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+/* Section: What we Do */
+#what .items{
+    display: flex;
+}
+
+
+#what .items .item{
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
+#what .items .item i{
+    background: #7CB4F1;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+
+#what .items .item p{
+    font-size: 0.75rem;
+}
+
+
+
+/* Section: Who we are */
+#who{
+    display: flex;
+}
+
+
+
+#who div{
+    flex: 1;
+}
+
+
+#who .who-text{
+    flex: 1.5;
+}
+
+#who .who-img img{
+    max-height: 70vh;
+}
+
+
+
+/* Section: Our Clients */
+#clients .items{
+    display: flex;
+}
+
+
+#clients .items img{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+
+.logo-1{
+    width: 60%;
+    filter: grayscale(100%);
+}
+
+
+.logo-1:hover{
+    filter: grayscale(0%);
+    transition: filter 0.7s;
+}
+
+
+/* Section: Contact */
+#contact{
+    display: flex;
+}
+
+
+
+#contact .contact-form,
+#contact .map{
+    flex: 1;
+}
+
+
+
+#contact .map{
+    background:#333;
+}
+
+.map a{
+    margin-left: 10px;
+}
+
+#contact .contact-form label{
+    display:block;    
+}
+
+
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+
+#contact .contact-form textarea{
+    height: 100px;
+}
+
+
+.map p,
+.map h2{
+    color: #fff;
+}
+
+
+.map a{
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
