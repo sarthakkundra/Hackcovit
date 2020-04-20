@@ -408,3 +408,7 @@ p{
     -webkit-text-fill-color: transparent;
     transform: scale(2.2);
   }
+
+  .special{
+      width: 250px !important;
+  }
