@@ -87,4 +87,8 @@
         width: 190%;
         filter: grayscale(0%);
     }
+
+    .lead{
+        font-size: 1.1rem;
+    }
 }

@@ -81,8 +81,9 @@ p{
 
 
 .lead{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 
@@ -277,7 +278,7 @@ p{
 
 
 #who .who-text{
-    flex: 1.5;
+    flex: 1;
 }
 
 #who .who-img img{
@@ -302,6 +303,7 @@ p{
 .logo-1{
     width: 60%;
     filter: grayscale(100%);
+    margin: auto;
 }
 
 
@@ -365,3 +367,44 @@ p{
     margin-top: 20px;
     margin-left: 20px;
 }
+
+
+
+.social-buttons a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 38px;
+  }
+  
+  .social-buttons a::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg,#22a6b3,#30336b);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+  }
+  
+  .social-buttons a:hover::before{
+    transform: scale(0);
+  }
+  
+  .social-buttons a i{
+    transition: 0.3s ease-in;
+  }
+  
+  .social-buttons a:hover i{
+    background: linear-gradient(45deg,#22a6b3,#30336b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
+  }
