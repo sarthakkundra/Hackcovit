@@ -103,4 +103,12 @@
     #clockdiv div > span{
         padding: 10px;
     }
+
+    .college{
+        width: 55%;
+    }
+
+    .footer{
+        margin-left: 4.3rem;
+    }
 }

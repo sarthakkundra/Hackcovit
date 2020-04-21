@@ -445,3 +445,13 @@ p{
 	padding-top: 5px;
 	font-size: 16px;
 }
+
+.college{
+    width:18%;
+
+}
+
+.footer{
+    display: inline-block;
+    margin-left: 10rem;
+}
