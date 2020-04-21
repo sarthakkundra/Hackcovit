@@ -95,4 +95,12 @@
     .special{
         width: 160px !important;
     }
+
+    #clockdiv > div{
+        padding: 5px;
+    }
+
+    #clockdiv div > span{
+        padding: 10px;
+    }
 }

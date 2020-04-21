@@ -47,6 +47,7 @@ p{
 .m-heading{
     font-size: 2rem;
     margin-bottom: 0.75rem;
+    margin-top: 2rem;
 }
 
 
@@ -412,3 +413,35 @@ p{
   .special{
       width: 250px !important;
   }
+
+
+
+
+
+  #clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 10px;
+	background: #5E89B8;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
