@@ -27,7 +27,7 @@ function carousel() {
 
 
 
-var deadline = 'May 1 2020 18:40:18 GMT-0400';
+var deadline = 'May 1 2020 07:59:59 GMT-0400';
 function time_remaining(endtime){
 	var t = Date.parse(endtime) - Date.parse(new Date());
 	var seconds = Math.floor( (t/1000) % 60 );
