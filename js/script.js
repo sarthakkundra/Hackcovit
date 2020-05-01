@@ -2,7 +2,8 @@ window.onload = () =>{
 	alert(`The following things have been updated in the important notice section.
 	1) Event Itinerary.
 	2) Presentation format.
-	3) Rule booklet.`)
+	3) Rule booklet.
+	4) Problem Statements.`)
 }
 
 
@@ -34,7 +35,7 @@ function carousel() {
 
 
 
-var deadline = 'May 1 2020 00:29:59 GMT-0530';
+var deadline = 'May 2 2020 00:29:59 GMT-0530';
 function time_remaining(endtime){
 	var t = Date.parse(endtime) - Date.parse(new Date());
 	var seconds = Math.floor( (t/1000) % 60 );
