@@ -1,10 +1,4 @@
-window.onload = () =>{
-	alert(`The following things have been updated in the important notice section.
-	1) Event Itinerary.
-	2) Presentation format.
-	3) Rule booklet.
-	4) Problem Statements.`)
-}
+
 
 
 window.addEventListener('scroll', () =>{
